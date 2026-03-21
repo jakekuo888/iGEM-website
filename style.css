@@ -1,0 +1,239 @@
+@font-face {
+    font-family: adequate;
+    src: url(font/Adequate.ttf);
+}
+
+@font-face {
+    font-family: BungeeReg;
+    src: url(font/BungeeReg.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(font/Montserrat.ttf);
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: #d4dbc3;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: montserrat;
+    font-size: 25px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #e9ff85;
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    list-style: none;
+}
+
+.animatedBg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/back1.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text {
+    display: flex;
+    gap: 20px;
+}
+
+.headerButton {
+    font-family: montserrat;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.headerButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.animatedBg h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 100px;
+    font-family: BungeeReg;
+    color: #FFFF00;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: BungeeReg;
+    color: #ff3333;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: BungeeReg;
+    color: black;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#topImg {
+    width: 100vw;
+}
+
+.xxx {
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+.xxx img {
+    display: block;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bod_ {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e0ffb4;
+    overflow: hidden;
+}
+
+.BB1 {
+    max-width: 50vw;
+    margin-left: 50px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #ffb67d;
+}
+
+.BB2 {
+    max-width: 40vw;
+    margin: 0 50px 0 20px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #ffb67d;
+}
+
+.BB2 img {
+    max-width: 30vw;
+}
+
+.BB3 {
+    width: 82vw;
+    margin: 10px auto;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 20px;
+    background-color: #ffb67d;
+}
+
+.blight_div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/blight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.footer {
+    height: 20vw;
+    text-align: center;
+    background-color: #d1815e;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 5px;
+        width: 90%;
+    }
+
+    .headerButton {
+        font-size: 15px;
+    }
+
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BB1, .BB2 {
+        width: 90%;
+        max-width: 500px;
+        margin: 10px auto;
+    }
+
+    .BB3 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .animatedBg h1 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 50px;
+        font-family: BungeeReg;
+        color: #FFFF00;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+}
